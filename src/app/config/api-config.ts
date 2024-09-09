@@ -1,3 +1,3 @@
 export const API_CONFIG = {
-	baseUrl: 'http://localhost:8080'
+	baseUrl: 'https://app-agenda-edu-api-production.up.railway.app/'
 }
