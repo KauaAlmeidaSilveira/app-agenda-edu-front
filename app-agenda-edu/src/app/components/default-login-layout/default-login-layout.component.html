@@ -1,0 +1,18 @@
+<main>
+    <div class="form-wrapper">
+        <h1 class="title"> {{ title }} </h1>
+    
+        <div class="navPage" *ngIf="!isDisabled">
+            <p class="page"  
+                [ngClass]="{'pageSelected': pageType === 'Login'}"
+                (click)="navigate('Login')">Login</p>
+            <p class="page" 
+                [ngClass]="{'pageSelected': pageType === 'Signup'}"
+                (click)="navigate('Signup')">Cadastrar</p>
+        </div>
+    
+        <ng-content></ng-content>
+    
+        <button [type]="'submit'" mat-flat-button (click)="submit()">{{ btnText }}</button>
+    </div>    
+</main>

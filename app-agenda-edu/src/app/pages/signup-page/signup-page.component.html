@@ -1,0 +1,41 @@
+<app-default-login-layout
+    title="Cadastro"
+    btnText="Cadastrar"
+    pageType="Signup"
+    (submit)="submit()"
+>
+    <form method="post">
+
+        <app-primary-input 
+            [type]="'text'"
+            [name]="'text'"
+            [placeholder]="'Nome'"
+            (value)="setName($event)">
+        </app-primary-input>
+
+        <app-primary-input 
+            [type]="'email'" 
+            [name]="'email'"
+            [placeholder]="'Email'"
+            (value)="setEmail($event)"
+            [autocomplete]="'username'">
+        </app-primary-input>
+
+        <app-primary-input 
+            [type]="'password'" 
+            [name]="'password'"
+            [placeholder]="'Senha'"
+            (value)="setPassword($event)"
+            [autocomplete]="'new-password'">
+        </app-primary-input>
+
+        <app-primary-input 
+            [type]="'password'" 
+            [name]="'password'"
+            [placeholder]="'Confirme sua Senha'"
+            (value)="setConfirmPassword($event)"
+            [autocomplete]="'new-password'">
+        </app-primary-input>
+
+    </form>
+</app-default-login-layout>

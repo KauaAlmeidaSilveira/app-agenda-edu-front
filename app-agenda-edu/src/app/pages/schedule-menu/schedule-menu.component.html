@@ -1,0 +1,23 @@
+<main>
+    <div class="menuSection">
+        <h1 class="title">Menu</h1>
+
+        <button
+            mat-flat-button
+            class="new-booking-btn"
+            (click)="navigate('bookingForm')">
+                Novo Agendamento
+            </button>
+
+        <div class="bookings-section">
+            <h2 class="subTitle">Meus Agendamentos</h2>
+            <ul class="bookings-list">
+                <app-booking-item
+                    *ngFor="let booking of bookings"
+                    [booking]="booking"
+                    (cancelBookingEmmit)="disableBookingById($event)">
+                </app-booking-item>
+            </ul>
+        </div>
+    </div>
+</main>

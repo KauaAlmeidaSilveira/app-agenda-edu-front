@@ -1,0 +1,14 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.forgotPassword {
+    color: #00a3ff;
+    cursor: pointer;
+    font-size: small;
+    text-align: center;
+}

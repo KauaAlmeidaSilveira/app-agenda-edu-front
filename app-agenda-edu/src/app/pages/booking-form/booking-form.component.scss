@@ -1,0 +1,23 @@
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+/* Estilo para o `mat-select` */
+mat-select {
+    display: flex;
+    background-color: #e0e2ec; /* Cor de fundo */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #c0c0c0; /* Borda do `mat-select` */
+    height: 2rem;
+}
+
+.input-date {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px 0px 0px;
+}
+
+

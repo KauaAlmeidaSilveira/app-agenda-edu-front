@@ -1,0 +1,48 @@
+<app-default-login-layout
+    [btnText]="'Agendar'"
+    [title]="'Agendamento'"
+    [disableNavPage]="true"
+    (submit)="insert()">
+
+    <form class="booking-form">
+        <mat-label>Local</mat-label>
+        <mat-select [(ngModel)]="booking.localId" name="local">
+            <mat-option *ngFor="let local of locals" [value]="local.id">
+                {{ local.name }}
+            </mat-option>
+        </mat-select>
+
+        <div class="input-date">
+            <mat-label>Data do agendamento</mat-label>
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="booking.date" (dateChange)="findPossiblesCheckIn()" name="date">
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <mat-label>Horario de entrada</mat-label>
+        <mat-select [(ngModel)]="booking.checkIn" name="horarioEntrada" (selectionChange)="findPossiblesCheckOutWithOut()">
+            <mat-option *ngFor="let horario of checkIns" [value]="horario">
+                {{ horario }}
+            </mat-option>
+        </mat-select>
+
+        <mat-label>Horario de saída</mat-label>
+        <mat-select [(ngModel)]="booking.checkOut" name="horarioSaida">
+            <mat-option *ngFor="let horario of checkOut" [value]="horario">
+                {{ horario }}
+            </mat-option>
+        </mat-select>
+
+        <mat-label>Turma</mat-label>
+        <mat-select [(ngModel)]="booking.courseId" name="turma">
+            <mat-optgroup *ngFor="let course of courses" [label]="course.name">
+                <mat-option *ngFor="let course of course.courses" [value]="course.id">
+                    {{course.name}}
+                </mat-option>
+            </mat-optgroup>
+        </mat-select>
+    </form>
+
+</app-default-login-layout>

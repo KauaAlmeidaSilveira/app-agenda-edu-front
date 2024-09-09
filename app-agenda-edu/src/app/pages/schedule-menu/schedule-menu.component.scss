@@ -1,0 +1,51 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ajustado para alinhar ao topo */
+    height: 100vh; /* Ajuste para usar toda a altura da viewport */
+    margin: 0;
+    overflow: hidden; /* Impede a rolagem no container principal */
+}
+
+.title {
+    font-family: "Inria Serif", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem; /* Ajustado para reduzir o espaçamento */
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: white; /* Adicionado para evitar mistura com a lista */
+    z-index: 1; /* Garante que o título fique acima da lista */
+}
+
+.new-booking-btn {
+    border-radius: 10px;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.bookings-section {
+    flex: 1; /* Permite que a seção de agendamentos cresça */
+    overflow-y: auto; /* Permite rolagem vertical na seção de agendamentos */
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+.subTitle {
+    font-family: "Inria Serif", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.bookings-list {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin: 0;
+    overflow-y: auto; /* Permite rolagem vertical dentro da lista se necessário */
+    max-height: 390px; /* Ajuste conforme necessário */
+}

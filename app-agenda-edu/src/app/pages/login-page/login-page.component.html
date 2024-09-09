@@ -1,0 +1,26 @@
+<app-default-login-layout
+    title="Login"
+    btnText="Login"
+    pageType="Login"
+    (submit)="submit()"
+>
+    <form method="post">
+        <app-primary-input
+            [type]="'email'"
+            [name]="'email'"
+            [placeholder]="'Email'"
+            (value)="setEmail($event)"
+            [autocomplete]="'username'">
+        </app-primary-input>
+
+        <app-primary-input
+            [type]="'password'"
+            [name]="'password'"
+            [placeholder]="'Senha'"
+            (value)="setPassword($event)"
+            [autocomplete]="'current-password'">
+        </app-primary-input>
+
+        <span class="forgotPassword" (click)="navigate()">Esqueci minha senha</span>
+    </form>
+</app-default-login-layout>

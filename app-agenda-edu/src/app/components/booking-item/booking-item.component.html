@@ -1,0 +1,15 @@
+<li class="booking-item">
+    <div class="booking-info">
+        <div class="booking-location"><span>{{ booking.localName }}</span></div>
+        <div class="booking-content">
+            <div class="booking-time">Horário: <span>{{ booking.checkIn }} - {{ booking.checkOut }}</span></div>
+            <div class="booking-row">
+                <div class="booking-date">Data: <span>{{ booking.date | dateString }}</span></div>
+                <div class="booking-class">Classe: <span>{{ booking.courseName }}</span></div>
+            </div>
+        </div>
+        <div class="booking-cancel-section">
+            <button class="btnCancel" (click)="cancelBooking()">Cancelar</button>
+        </div>
+    </div>
+</li>
