@@ -15,8 +15,10 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+	<img src="https://github.com/KauaAlmeidaSilveira/app-agenda-edu-front/blob/master/.github/login.jpg" alt="Image Example" width="500px">
+    <img src="https://github.com/KauaAlmeidaSilveira/app-agenda-edu-front/blob/master/.github/cadastro.png" alt="Image Example" width="500px">
+    <img src="https://github.com/KauaAlmeidaSilveira/app-agenda-edu-front/blob/master/.github/menuAgendamentos.png" alt="Image Example" width="500px">
+	<img src="https://github.com/KauaAlmeidaSilveira/app-agenda-edu-front/blob/master/.github/formularioAgendamento.png" alt="Image Example" width="500px">
 </p>
 
 ## 🚀 Pré requisitos
